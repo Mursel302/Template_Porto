@@ -1,0 +1,107 @@
+
+@import 'partials/header';
+@import 'partials/footer';
+
+#main{
+          color: #777;
+          font-family: "Open Sans", Arial, sans-serif;
+          font-size: 14px;
+          line-height: 22px;
+	.container{
+		.rowblog{
+			    margin-bottom: 25px !important;
+			    margin-right: -15px;
+                margin-left: -15px;
+                box-sizing:border-box;
+                    #scrool{
+      height: 3.8em;
+      width:3.6em;
+      margin-right: 1em;
+      z-index: 5;
+      float:right;
+      position: fixed;
+      top: 92%;
+      right: 0em;
+      background: #404040;
+      opacity:0.75;
+      color:white;
+      font-size: 14px;
+      box-sizing:border-box;
+      padding-top:1.2em;
+      text-align: center;
+      display: none;
+      cursor:pointer;
+      :hover{
+        color:#e04622;
+      }
+     } 
+			.col-md-6{
+				    position: relative;
+                    min-height: 1px;
+                    padding-right: 15px;
+                    padding-left: 15px;
+				.recent-posts{
+					    margin-bottom: 25px !important;
+                        margin-top: 25px !important;             
+					a{
+						    outline: none !important;
+						    // color: #e04622;
+				            background-color: transparent;
+						img{
+                            padding-bottom: 15px !important;
+
+						}
+					}
+					.post{//article
+                        .date{
+                        	    float: left;
+                                margin-right: 10px;
+                                margin-top: 8px;
+                                text-align: center;
+                        	.day{
+                        		color: #e04622;
+                        		background: #F7F7F7;
+                        		font-size: 18px;
+                        		font-weight: bold;
+                                padding: 8px;
+                                text-align: center;
+                                display: block;
+                        	}
+                        	.month{
+                        	    background-color: #e04622;
+                        	    color: #FFF;
+                                font-size: 0.9em;
+                                padding: 0 10px 2px;
+                        	}
+                        }
+                        h4{
+                        	     padding-bottom: 0 !important;
+                        	     padding-top: 15px !important;
+                        	     margin-bottom: 0 !important;
+                        	     font-size: 1.4em;
+                                 font-weight: 400;
+                                 letter-spacing: normal;
+                                 line-height: 27px;
+                                 margin: 0 0 14px 0;
+                                 color: #1d2127;
+                        	a{
+                                     color: #2e353e !important;
+                                     outline: none !important;
+                        	}
+                        }
+                        p{
+                               color: #777;
+                               line-height: 24px;
+                               margin: 0 0 20px;
+                        }
+                        a{
+                              margin-top: 15px !important;
+                              outline: none !important;
+                              color: #e04622;
+                        }
+					}
+				}
+			}
+		}
+	}
+}

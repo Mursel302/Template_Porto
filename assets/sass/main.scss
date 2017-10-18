@@ -1,0 +1,595 @@
+/*// @import 'partials/services'*/
+@import 'partials/company';
+@import 'partials/services';
+@import 'partials/projects';
+@import 'partials/blog';
+@import 'partials/contact';
+@import 'partials/generalConstuction';
+@import 'partials/header';
+@import 'partials/footer';
+
+@keyframes fromRight {
+    0%   {right:-48%;}
+    100%  {right:12%;}
+}
+
+body {
+  font-family:"Open Sans";
+}
+.photo-overlay {
+  position:fixed;
+  z-index:999999;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  background:rgba(0,0,0,0.5);
+  text-align:center;
+  img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+  }
+  .closex {
+    position:absolute;
+    top:10px;
+    right:10px;
+    font-size:20px;
+    color:white;
+    cursor:pointer;
+  }
+}
+.owl-theme .owl-nav [class*=owl-]:hover{background:black;}
+.owl-theme .owl-nav [class*=owl-]{
+  background:black;
+  :hover{background:black;}
+}
+.home{
+	height:auto;
+	padding:0;
+  #sectionFirst{
+    height: 700px;
+ .imgBox1{
+          height:700px;
+          background-image: url('http://preview.oklerthemes.com/porto/5.7.2/img/demos/construction/slides/slide-construction-1.jpg');
+          background-size:cover;
+          background-position: center 100%;
+          width: 100%;
+          h3{
+            position:absolute;
+            top: 79.3%;
+            right: -32%;
+            font-size: 1.7em;
+            color: white;
+            font-weight: normal;
+            animation-name:fromRight;
+            animation-delay: 1s; 
+            animation-duration: 2.5s;
+            transition: all ease 2.5s;
+            animation-fill-mode: forwards;
+          }
+        }
+ .imgBox2{
+          height:700px;
+          background-image: url('http://preview.oklerthemes.com/porto/5.7.2/img/demos/construction/slides/slide-construction-2.jpg');
+          background-size:cover;
+          background-position: center 100%;
+          width: 100%;
+          h3{
+            position:absolute;
+            top: 79.3%;
+            right: 18%;
+            font-size: 1.7em;
+            color: white;
+            font-weight: normal;
+            animation-name:fromRight;
+            animation-delay: 1s; 
+            animation-duration: 2.5s;
+            transition: all ease 2.5s;
+            animation-fill-mode: forwards;
+          }
+        }
+     .owl-carousel{
+      .owl-nav{
+        .owl-prev{
+             float:left;
+             position:absolute;
+             margin-left:-48%;
+             top:52%;
+             height: 3em;
+             width: 3em;
+             opacity:0.8;
+             color:white;
+             text-align: center;
+             box-sizing:border-box;
+             padding-top:0.6em;
+             transform:rotate(45deg);
+             
+             i{
+              transform: rotate(315deg);
+              font-size: 2em;
+             }
+        }
+        .owl-next{
+             float:right;
+             position:absolute;
+             right:1%;
+             top:52%;
+             height: 3em;
+             width: 3em;
+             opacity:0.8;
+             color:white;
+             text-align: center;
+             box-sizing:border-box;
+             padding-top: 0.3em;
+             padding-left: 0.7em;
+             transform:rotate(45deg);
+             
+             i{
+              transform: rotate(315deg);
+              font-size: 2em;
+             }
+        }
+      }
+     }
+     #scrool{
+      height: 3.8em;
+      width:3.6em;
+      margin-right: 1em;
+      z-index: 5;
+      float:right;
+      position: fixed;
+      top: 92%;
+      right: 0em;
+      background: #404040;
+      opacity:0.75;
+      color:white;
+      font-size: 14px;
+      box-sizing:border-box;
+      padding-top:1.2em;
+      text-align: center;
+      display: none;
+      cursor:pointer;
+      :hover{
+        color:#e04622;
+      }
+     }   
+   }
+
+
+	                // second section begin
+	     .sectionSecond{
+	     	height: auto;
+	     	box-sizing:border-box;
+	     	padding-bottom:63px;
+	     	padding-top:80px;
+	     	.col-md-4{
+	     		h2{
+	     			    font-size: 2.2em;
+                font-weight: 300;
+                line-height: 42px;
+                margin: 0 0 5px 0;
+                 color: #777;
+	     		}
+	     		p{
+	     			font-size: 21px;
+	     			font-weight: 300;
+            line-height: 1.4;
+            color: #777;
+	     		}
+	     	}
+	     	.col-md-6{
+          .boxIcon{
+           height: 100%;
+          }
+	     		p{
+	     			    color: #777;
+                        line-height: 25px;
+                        margin: 0 0 36px;
+	     		}
+	     		a{
+	     			    color: #e04622;
+	     		}
+	     	}
+	     } 
+	     // secon section end
+	     // services begin
+	     #services{
+	                 height: auto;
+	                 background-color: #eaeff3 !important;
+                     border-color: #dae3ea !important;
+                     box-sizing:border-box;
+                     padding-top:5.5rem;
+                     padding-bottom:5.5rem;
+                     .container{
+                      overflow: hidden;
+                     	        :first-child{
+                                         h2{
+                                         	color: #2e353e;
+                                            font-size: 2.2em;
+                                            font-weight: 300;
+                                            line-height: 42px;
+                                             margin: 0 0 1px 0
+                                         }
+                                         p{
+                                               font-size: 21px;
+                                               font-weight: 300;
+                                               line-height: 1.4;
+                                               margin: 0 0 20px;
+                                               color: #777;
+                                         }
+
+                     	              }
+                              }
+                      .servicesAnim{
+                         top:25em;
+                         transition: all ease 1.5s;
+                      }        
+                     .col-md-6{
+                     	height: auto;
+                     	margin-top: 30px;
+                     	.boxIcon{
+                     		height: 100%;
+                            float:left;
+                     	}
+                       h4{
+                          color: #1d2127;
+                          font-size: 1.4em;
+                          font-weight: 400;
+                          letter-spacing: normal;
+                          line-height: 27px;
+                         }    
+                         p{
+                           color: #5e5e5e;
+                           line-height: 24px;
+                           font-size: 16px;
+                         }
+                         a{
+                            color: #e04622;
+                            font-size: 14px;
+                            line-height: 22px;
+                         }
+
+                     }         
+	              }    
+	       // projects begin
+	  #projects{
+	  	box-sizing:border-box;
+      padding-bottom:25px;
+      padding-top:15px;
+      background:url('http://preview.oklerthemes.com/porto/5.7.2//img/home-concept-small.png');
+      background-position: center 63%;
+      background-repeat:no-repeat;
+      .col-md-12{
+        h2{
+          font-size: 2.2em;
+           font-weight: 300;
+           line-height: 42px;
+           margin: 0;
+           margin-top: 1.5em;
+        }
+        p{
+              margin-bottom: 20px;
+             font-size: 21px;
+             font-weight: 300;
+             line-height: 1.4;
+             margin: 0 0 20px;
+             color: #777;
+        }
+        .diamond-wrapper{
+              font-size: 0;
+            margin: 40px auto;
+            position: relative;
+            text-align: center;
+            padding: 50px 0 0 57px;
+
+          .diamonds{
+            > li {
+                display: inline-block;
+                font-size: 18px;
+                margin-right: 135px;
+            }
+            > li:nth-child(3) {
+              margin-right:0;
+            }
+            > li:nth-child(4) {
+                  right: 145px;
+              top: 9px;
+              position: absolute;
+            }
+            > li:nth-child(5) {
+                  margin-left: 527px;
+                margin-top: -70px;
+            }
+            > li:nth-child(6) {
+                  position: absolute;
+                margin: -6px 0 0 -27px;
+                right: -15px;
+            }
+            > li:nth-child(7) {    
+              position: absolute;
+              margin: 97px 0 0 -133px;
+              right: 88px;
+
+            }
+            .diamond.diamond-sm {
+              height:128px;
+              width:128px;
+              .content {
+                width:128px;
+                height:128px;
+                img {
+                  max-width: 195px;
+                }
+              }
+            }
+            .diamond{
+              // transform: rotate(-45deg);
+                background: #f4f4f4;
+                display: block;
+                height: 255px;
+                overflow: hidden;
+                position: relative;
+                text-decoration: none;
+                width: 255px;
+                overflow: hidden;
+                transform: rotate(-45deg);
+                &:after {
+                  transition: all 0.2s ease;
+                  content: " ";
+                  width: 100%;
+                  height: 100%;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  background: #000;
+                  opacity: 0;
+                  transform: scale(0);
+                  z-index: 100;
+                }
+                &:hover:after {
+                  opacity: 0.3;
+                  transform: scale(1);
+                }
+                .content {
+                  display: table-cell;
+                  height: 255px;
+                  padding: 0 10px;
+                  transform: rotate(45deg);
+                  text-align: center;
+                  vertical-align: middle;
+                  width: 255px;
+                  position: relative;
+                  img {
+                    margin-left: -25%;
+                    max-width: 375px;
+                  }
+                }
+            }
+          }
+        }
+        .col-md-6{
+             .bottomContent{
+                     color: #333;
+                     font-family: "Open Sans", Arial, sans-serif;
+                     font-size: 15px;
+                     line-height: 24px;
+                     text-align: left;
+                        }
+
+                  a{
+                        background: transparent;
+                        border-color: #E04622;
+                        color: #E04622;
+                        text-shadow: none;
+                        padding: 4px 12px;
+                         border-width: 3px;
+                         border-radius:0;
+                         margin-bottom: 0;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 1.42857143;
+                        text-align: center;;
+                        white-space: nowrap;
+                        vertical-align: middle;
+                        float:left;
+                                      :hover{
+                                        border: green 3px solid;
+                                      }
+                  }      
+        }
+      }
+	 }
+   // project end
+   // poro magazine begin
+	 #portoMagazine{
+           width: 100%;
+           background-image:url('http://preview.oklerthemes.com/porto/5.7.2/img/demos/construction/testimonials/testimonials-bg.jpg');
+           background-position: center;
+           background-repeat:no-repeat;
+           padding-top:6em;
+           padding-bottom:6em;
+           padding-right:7em;
+           padding-left:7em;
+   .col-md-6{
+           	height: auto;
+           	padding:3em;
+            #homeCarousel {
+              .owl-dots {
+                .owl-dot{
+                  :hover{
+                      background:red;
+                    }
+                }
+                .owl-dot.active {
+                  span {
+                    background:red;
+                  }
+                }
+              }
+            }
+              #homeCarousel{
+                        margin-top:0;
+                .item{
+                             p{
+                                     color: #777;
+                                     font-family: Georgia, serif;
+                                     font-style: italic;
+                                     line-height: 1.3;
+                                     padding: 0 40px;
+                                     text-align: center;
+                                    font-size: 20px;
+                                        i:first-child{
+                                          float: left;
+                                          margin-left: -1.5em;
+                                          margin-top: 0;
+                                        }
+                                        i:last-child{
+                                          float: right;
+                                          margin-right: -1.5em;
+                                          margin-bottom:0;
+                                        }
+                                 }
+                                   h3{
+                                      color:#111;
+                                      text-align: center;
+                                      font-size: 14px;
+                                      span{
+                                            color: #666;
+                                            display: block;
+                                            font-size: 12px;
+                                          }
+                                     }
+                                }
+                             }
+         
+                           }
+
+                     }
+                     // brendcarousel begin
+         #brendCarousel{
+                          // border-bottom:2px solid black;
+                          display: block;
+                          padding:20px 0;
+                        hr{
+                          width: 73%;
+                          height: 2px;
+                          background:#777;
+
+                        }  
+                  .container{ 
+                          #brendSlide{
+                            height: 100%;
+                            .owl-nav{
+                              .owl-prev{
+                                margin-top: -2.9em;
+                                float:left;
+                                margin-left: -2em;
+                                background:white;
+                                color: #777;
+                                border:1px solid #777;
+                                        &:active {
+                                                    background:#ba341a;
+                                                  }
+                                }
+                              .owl-next{
+                                float: right;
+                                margin-top: -2.9em;
+                                margin-right: -1.5em;
+                                background:white;
+                                color: #777;
+                                border:1px solid; 
+                                        &:active {
+                                                    background:#ba341a;
+                                                  }
+                                }
+                            }
+                            .brendBox{
+                                 height:100%;
+                                 margin-top: 3em;
+                            }
+                          }
+                         }
+                       }
+                       // brendcarousel end
+                       // blog begin
+          #blog{
+            // height: 580px;
+            padding-bottom:6em;
+              .container{
+                   .col-md-12{
+                    h2{
+                            font-size: 2.2em;
+                            font-weight: 300;
+                            line-height: 42px;
+                            margin: 0;
+                            margin-top: 1.5em;
+                    }//h2
+                    p{
+                            font-size: 21px;
+                            font-weight: 300;
+                            line-height: 1.4;
+                            margin: 0 0 20px;
+                            color: #777;
+                    } //p
+                   }//col md 12
+                .row{
+                  .col-md-4{
+                      .content{
+                        width: 100%;
+                        height: auto;//helelik 200 du sora auto olacag
+                        .row{ 
+                                 .calendar{ 
+                                   width: 12%;
+                                   height: 5em;
+                                   float: left;
+                                                           margin-right: 4%;
+                                   .gun{
+                                         width: 100%;
+                                         height: 3.1em;
+                                         background:#f4f5f7;
+                                         color: #e04622;
+                                         text-align: center;
+                                         box-sizing:border-box;
+                                         padding-top:10%;
+                                         p{
+                                          font-size: 1.5em;
+                                          font-weight: 600;
+                                         }
+                                   }
+                                    .ay{
+                                         width: 100%;
+                                         height: 1.9em;
+                                         background-color: #e04622;
+                                         color:white;
+                                         text-align: center;
+                                    }
+                                  }//col md 1
+                                  h4{
+                                      
+                                           a{
+                                                color: #1d2127;
+                                                font-size: 1.2em;
+                                                font-weight: normal;
+                                                letter-spacing: normal;
+                                           }
+                                  }
+                                 
+                          }//row
+                      }//content
+                    }//col md 4
+
+                 }//row
+                         h5{
+                              color: #777;  
+                              line-height: 20px;}
+                          a{
+                                color: #e04622;
+                          }    
+                            }//container
+          } //blog
+          //blog end        
+     
+          
+	 }

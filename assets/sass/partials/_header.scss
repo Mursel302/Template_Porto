@@ -1,0 +1,199 @@
+    #header{
+             height: 95px;
+             background:white;
+             width: 100%;
+             position:fixed;
+             z-index: 5;
+             margin-top: 2em;
+             transition: all ease 0.8s;
+             .hide-on-big {
+               position: absolute;
+                top: 9%;
+                right: 4%;
+
+               a {
+                 text-align: center;
+                 font-size:30px;
+                 line-height: 75px;
+               }
+             }
+            
+             @media (max-width:992px) {
+               .bigLogo {
+                 display:none;
+               }
+               .mobile-edit {
+                 position:absolute;
+                 top:95px;
+                 left:0;
+                 right:0;
+                 background:white;
+                 padding:0;
+                 display:none;
+                 height:auto;
+                 margin:0;
+                padding:15px;
+                   &.active {
+                     display:block;
+                   }
+                
+                 > li {
+                   a {
+                     margin:0;
+                     border-bottom:1px solid gray;
+                     padding:0;
+                     padding:15px;
+                     line-height: 1;
+                     height:auto;
+                     &.active {
+                       background:#E04622;
+                       color:white;
+                     }
+                   }
+                 }
+                    
+               }
+             }
+             @media (min-width:992px) {
+               .hide-on-big{
+                 display:none;
+               }
+             }
+             .socialMediaIcons{
+              .iconHover1{
+                :hover{
+                  background: #3288a8;
+                  color:white !important;
+                  }
+                }
+              .iconHover2{
+                :hover{
+                  background:#2b5496;
+                  color:white !important;
+                }
+                }
+                 .icons{
+                    float: right;
+                    border-radius:100%;
+                    height: 2.2em;
+                    width: 2.2em;
+                    margin-left: 1em;
+                    margin-top: 2.3em;
+                    box-sizing: border-box;
+                    padding-top: 0.5em;
+                    font-size: 14px;
+                   text-align: center;
+                   color: #333 !important;
+                 }
+                 .fb{
+                       margin-left:0;
+                 }
+                 .tvt{
+                      margin-left: 0em;
+                      margin-right: 1.5em;
+                 }
+             }
+             ul{
+              float: right;
+              height: 95px;
+              margin-top: -4.9em;
+              margin-right: 1.9em;
+              transition: all ease .5s;
+               .has-dropdown{   ////////////////////////////////////
+                             position: relative;
+                             display: inline-block;  
+                             transition: all ease .5s !important;  
+                             @media(max-width:992){
+                              width:100%!important ;
+                            }
+                        .dropdown-menu{
+                                          display: none;
+                                          position: absolute;
+                                          z-index: 111;
+                                          min-width: 230px;
+                                          border-top-color: #e04622;
+                                          margin-top: 0;
+                                          height: 0;
+                                          padding:0;
+                                          transition: all ease .5s !important;
+                                   li{
+                                          line-height: 24px !important;
+                                          box-sizing: border-box;
+                                           display: list-item;
+                                           font-size: 14px;
+                                           background:#FFF;
+                                           transition: all ease .5s;
+                                          :hover{
+                                               background:#CCC;
+                                           } 
+                                           a{
+                                                border-bottom: 1px solid #f4f4f4;
+                                                color: #777;
+                                                font-size: 0.9em;
+                                                font-weight: 400;
+                                                padding: 8px 20px 8px 8px;
+                                                position: relative;
+                                                text-transform: none;
+                                                height: auto !important;
+                                                line-height: 1 !important;
+                                               transition: all ease .5s;
+                                           }
+                                     }
+                                 }
+                                   &:hover .dropdown-menu {
+                                                              display: block;
+                                                          }
+                         }        
+              .special{
+                color:#e04622;
+                :hover{
+                  color:white;
+                }
+              }
+              li{
+                 :hover{
+                  background:#e04622;
+                  color:white;
+                 }
+                a{
+                  height: 95px;
+                  box-sizing: border-box;
+                  line-height: 590%;
+                  color: #5e7279;
+                  font-size: 12px;
+                  font-style: normal;
+                 font-weight: 700;
+                 text-transform: uppercase;
+                }
+              }
+             }
+             a{
+              img{
+                    width: 131px;
+                    height: 48px;
+                    margin-left: 9.5em;
+                    margin-top: 1.5em;
+                    @media(max-width:768px){
+                       margin-left: 0em;
+                    }
+                    @media(max-width:900px){
+                       margin-left: 0.5em;
+                    }
+              }
+             }
+             .bigLogo{
+                    width: 324px;
+                    height: 212px;
+                    position: absolute;
+                    z-index: 5;
+                    margin-top: -7em;
+                    margin-left: 7em;
+                    transition: all ease 1s;
+                     @media(max-width:768px){
+                          margin-left: 0em;
+                    }
+                    @media(max-width:900px){
+                         margin-left: 0.5em;
+                    }
+             }
+     }
